@@ -32,7 +32,7 @@ SECRET_KEY = 'p1zzaNfr1e5'
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-0w3nm-portfolio4-restaur-n1c2ojat1g.us2.codeanyapp.com',
- 'https://pp4-restaurant-3d48ee918232.herokuapp.com/','localhost']
+                 'pp4-restaurant-3d48ee918232.herokuapp.com', 'localhost']
 
 
 # Application definition
