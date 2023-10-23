@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel grey lighten-5 z-depth-1">
+        <div class="row valign-wrapper">
+            <div class="col s6 m2">
+                {% load static %} <img src="{% static 'media/alireza-mirzabegi-FtUlp4THNI4-unsplash.jpg' %}"
+                    alt="Burger" class="circle responsive-img">
+            </div>
+            <div class="col s10">
+                <span class="black-text">
+                    <h3>Welcome to <strong>Galaxy Gourment</strong></h3>
+                    <p>Food that is <strong>OUT OF THIS WORLD!</strong></p>
+                    <br>
+                    {% if user.is_authenticated %}
+                    <p>To make a booking click on the link <a href="{% url 'create_bookings' %}"><strong>here</strong></a></p>
+                    {% else %}
+                    <p>You can press the<a href="{% url 'account_signup' %}"><strong>Sign Up</strong></a>button to view your reservation remember, change or cancel.  </p>
+                    <br>
+                    <p>Our times are below aswell as our menu.</p>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel grey lighten-5 z-depth-1">
+        <h3 class="center">Times</h3>
+        <div class="container"></div>
+        <div class="container center">
+            <div class="row">
+                <div class="col s1">17:00</div>
+                <div class="col s1">17:15</div>
+                <div class="col s1">17:30</div>
+                <div class="col s1">17:45</div>
+                <div class="col s1">18:00</div>
+                <div class="col s1">18:15</div>
+                <div class="col s1">18:30</div>
+                <div class="col s1">18:45</div>
+                <div class="col s1">19:00</div>
+                <div class="col s1">19:15</div>
+                <div class="col s1">19:30</div>
+                <div class="col s1">19:45</div>
+                <div class="col s1">20:00</div>
+                <div class="col s1">20:15</div>
+                <div class="col s1">20:30</div>
+                <div class="col s1">20:45</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel deep-orange lighten-3 z-depth-1">
+        <h3 class="center"><strong>Menu</strong></h3>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><strong>Starter</strong>
+                </div>
+                <div class="collapsible-body grey lighten-3"><span>Garlic Bread</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Nachos</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Soup of the Day</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><strong>Mains</strong></div>
+                <div class="collapsible-body grey lighten-3"><span>Cheese Burger</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Steak</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Meat and Potato Pie</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><strong>Sides</strong></div>
+                <div class="collapsible-body grey lighten-3"><span>Chips</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Wedges</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Curly Chips</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><strong>Dessert</strong></div>
+                <div class="collapsible-body grey lighten-3"><span>Apple Pie</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Strawberry Pudding and Custard</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Ice Cream</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="fa-solid fa-ice-cream"></i><strong>Drinks</strong></div>
+                <div class="collapsible-body grey lighten-3"><span>Alcohol</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Soft Drink</span></div>
+                <div class="collapsible-body grey lighten-3"><span>Assortment of Ice Cream</span></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{%endblock%}
