@@ -34,6 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-0w3nm-portfolio4-restaur-n1c2ojat1g.us2.codeanyapp.com',
                  'pp4-restaurant-3d48ee918232.herokuapp.com', 'localhost']
 
+ACCOUNT_EMAIL_VERIFICATION ='none'
 
 # Application definition
 
@@ -43,11 +44,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'booking',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -57,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'restaurant.urls'
