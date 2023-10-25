@@ -10,7 +10,7 @@
             <div class="card grey">
                 <div class="card-content white-text">
                     <p>Username: {{ user.username }}</p>
-                    <form method="post" action="{% url 'create_bookings' %}">{% csrf_token %}
+                    <form method="post" action="{% url 'create_reservation' %}">{% csrf_token %}
                         {{ form.as_p }}
 
                         <input type="submit" value="Book" class="btn-small submit-button">

@@ -37,19 +37,24 @@
                     <a class="nav-link" href="{% url 'bookings' %}">Your Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'account_logout' %}">SignOut</a>
+                    <a class="nav-link" href="{% url 'account_signout' %}">SignOut</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'account_signup' %}">Account Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'account_login' %}">SignIn</a>
+                    <a class="nav-link" href="{% url 'account_signin' %}">SignIn</a>
                 </li>
                 {% endif %}
             </ul>
         </div>
     </nav>
+
+    <!--Content-->
+    {% block content %}
+
+    {% endblock content %}
 
     <!--Footer-->
     <footer>

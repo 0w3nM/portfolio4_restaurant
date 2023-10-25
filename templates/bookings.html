@@ -16,8 +16,8 @@
                         <p class="mb-2"><strong>Party Size:</strong> {{ reservation.party_size }}</p>
                     </div>
                     <a href="{% url 'update_booking' reservation.id %}" class="btn btn-success">Update</a>
-                    <a href="{% url 'remove_booking' reservation.id %}" class="btn btn-danger"
-                        data-bs-toggle="modal" data-bs-target="#deleteMessage">Remove</a>
+                    <a href="{% url 'remove_booking' reservation.id %}" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#deleteMessage">Remove</a>
                     <div class="modal fade" id="deleteMessage" tabindex="-1" aria-labelledby="deleteMessageLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
