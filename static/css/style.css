@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playpen+Sans:wght@600&family=Skranji:wght@700&family=Titillium+Web:wght@300&display=swap');
+
 body {
-    background-color: #A9A9A9;
+    background-color: #a9a9a9;
+}
+/* -----Header----*/
+.header {
+    background-color: #FFFAF0;
+    font-size: x-large;
+    text-align: center;
 }
 
-.brand-logo {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+.red-word {
+    color: #dc143c;
+    font-size: xx-large;
+    font-family: 'Playpen Sans', 'sans-serif';
 }
 
+.purple-word {
+    color: #8b008b;
+    font-family: 'Titillium Web', 'sans-serif';
+}
+
+/* ----Nav Bar----*/
 .navbar {
     position: relative;
     display: flex;
@@ -16,13 +29,50 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: aliceblue;
+    border: 2px solid #228B22;
+    list-style: none;
 }
 
-.red-word {
-    color: #DC143C;
-
+.nav-item {
+    font-size: large;
+    font-family: 'Oswald', 'sans-serif';
+    text-decoration: overline;
 }
 
-.purple_word {
-    color: #8B008B;
+.nav-link {    
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    text-decoration: none;        
 }
+
+/*----Text Body----*/
+.text-body {
+    color: #191970 !important;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.text-body h3 strong {
+    color: #4B0082;
+}
+
+.text-body p strong {
+    color: #FF4500;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: darkred;
+    font-size: larger;
+    font-family: 'Skranji', 'sans-serif';
+}
+
+/*----Menu----*/
+
+
+/*----Times----*/
+
+
+/*----Footer----*/

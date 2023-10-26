@@ -4,6 +4,11 @@ from django.contrib import messages
 from .models import Reservation
 from .forms import ReservationForm
 
+
+# View the Home Page #
+def home(request):
+    return render(request, 'index.html')
+
 # View Reservations #
 
 
