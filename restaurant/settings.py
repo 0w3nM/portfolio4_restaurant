@@ -34,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-0w3nm-portfolio4-restaur-n1c2ojat1g.us2.codeanyapp.com',
                  'pp4-restaurant-3d48ee918232.herokuapp.com', 'localhost']
 
-ACCOUNT_EMAIL_VERIFICATION ='none'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Application definition
 

@@ -27,7 +27,7 @@ def create_reservation(self, request):
             return redirect('bookings')
         else:
             messages.error(request,
-            'Reservation wasnt successful. Please amend and try again.')
+                           'Reservation wasnt successful. Please amend and try again.')
             reservation_form = ReservationForm()
             context = {
                 'form': reservation_form
@@ -45,12 +45,12 @@ def update_reservation(self, request, booking_id):
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST)
         if reservation_form.is_valid():
-            messages.success(request, 
-                'Your reservation was successully updated.')
+            messages.success(request,
+                             'Your reservation was successully updated.')
             return redirect('bookings')
         else:
             messages.error(request,
-                'Reservation wsnt updated successfully. Please amend and try again.')
+                           'Reservation wsnt updated successfully. Please amend and try again.')
             reservation_form = ReservationForm()
             context = {
                 'form': reservation_form
@@ -59,6 +59,7 @@ def update_reservation(self, request, booking_id):
 
 # Delete Reservation #
 
+
 def remove_reservation(self, request, booking_id):
     """
     User can delte a reservation
@@ -66,5 +67,5 @@ def remove_reservation(self, request, booking_id):
     booking = get_object_or_404(Reservation, id=booking_id)
     booking.delete()
     messages.success(request,
-    'Your reservation has been sucessfully deleted')       
+                     'Your reservation has been sucessfully deleted')
     return redirect('bookings')
