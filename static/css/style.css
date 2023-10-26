@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playpen+Sans:wght@600&family=Skranji:wght@700&family=Titillium+Web:wght@300&display=swap');
 
-body {
-    background-color: #a9a9a9;
-}
 /* -----Header----*/
 .header {
     background-color: #FFFAF0;
@@ -70,7 +67,13 @@ p {
 }
 
 /*----Menu----*/
+.menu-header {
+    text-align: center;
+    color:#228B22;
+    text-decoration: underline;
+}
 
+.
 
 /*----Times----*/
 
