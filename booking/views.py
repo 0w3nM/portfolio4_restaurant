@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views import generic
+from django.views import generic, View
 from django.contrib import messages
 from .models import Reservation
 from .forms import ReservationForm
@@ -12,43 +12,45 @@ def home(request):
 # View Reservations #
 
 
-class ReservationList(generic.View):
+class ReservationList(generic.ListView):
     model = Reservation
     template_name = 'bookings.html'
+    queryset = Reservation.objects.all()
+    paginate_by = 5
+
 
 # Create Reservation #
 
-
-def create_reservation(self, request):
+def create_reservation(request):
     """
-    User can crate a reseration
+    User can create a reservation
     """
     if request.method == 'POST':
-        reservation_form = ReservationForm(request.POST)
+        reservation_form = ReservationForm(request.POST, instance=request.user)
         if reservation_form.is_valid():
-            reservation_form.instance.name = request.user
             reservation_form.save()
             messages.success(request, 'Your reservation was successul.')
             return redirect('bookings')
         else:
             messages.error(request,
                            'Reservation wasnt successful. Please amend and try again.')
-            reservation_form = ReservationForm()
-            context = {
-                'form': reservation_form
-            }
-        return render(request, '/templates/create_reservation')
+    else:
+        reservation_form = ReservationForm()
+    context = {
+        'form': reservation_form
+    }
+    return render(request, 'create_reservation.html', context)
+
 
 # Update Reservation #
 
-
-def update_reservation(self, request, booking_id):
+def update_reservation(request, booking_id):
     """
     User can amend a reservation
     """
     booking = get_object_or_404(Reservation, id=booking_id)
     if request.method == 'POST':
-        reservation_form = ReservationForm(request.POST)
+        reservation_form = ReservationForm(request.POST, instance=request.user)
         if reservation_form.is_valid():
             messages.success(request,
                              'Your reservation was successully updated.')
@@ -60,12 +62,12 @@ def update_reservation(self, request, booking_id):
             context = {
                 'form': reservation_form
             }
-        return render(request, '/templates/update_reservation')
+        return render(request, 'update_reservation.html', context)
+
 
 # Delete Reservation #
 
-
-def remove_reservation(self, request, booking_id):
+def remove_reservation(request, booking_id):
     """
     User can delte a reservation
     """

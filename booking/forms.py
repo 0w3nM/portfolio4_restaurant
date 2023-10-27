@@ -1,6 +1,7 @@
-from django import forms
-import datetime
 from .models import Reservation
+import datetime
+from django import forms
+from django.forms import ModelForm
 
 TIME_CHOICES = [
     ("17:00", "17:15"),
@@ -23,7 +24,7 @@ PARTY_SIZE = [
 ]
 
 
-class ReservationForm(forms.ModelForm):
+class ReservationForm(ModelForm):
     """
     Reservation Form
     """
@@ -34,3 +35,7 @@ class ReservationForm(forms.ModelForm):
     time = forms.ChoiceField(label='Time: ', choices=TIME_CHOICES)
 
     party_size = forms.ChoiceField(label='Party Members: ', choices=PARTY_SIZE)
+
+    class Meta:
+        model = Reservation
+        fields = '__all__'

@@ -15,8 +15,7 @@ TIMES_AVAILABLE = (
 )
 
 
-class Reservation(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+class Reservation(models.Model):    
     name = models.CharField(max_length=25)
     day = models.DateField()
     time = models.CharField(choices=TIMES_AVAILABLE, max_length=10)
