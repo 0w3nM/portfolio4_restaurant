@@ -4,23 +4,36 @@ from django import forms
 from django.forms import ModelForm
 
 TIME_CHOICES = [
-    ("17:00", "17:15"),
-    ("17:30", "17:45"),
-    ("18:00", "18:15"),
-    ("18:30", "18:45"),
-    ("19:00", "19:15"),
-    ("19:30", "19:45"),
-    ("20:00", "20:15"),
-    ("20:30", "20:45"),
+    ('time1', "17:00"),
+    ('time2', "17:15"),
+    ('time3', "17:30"),
+    ('time4', "18:45"),
+    ('time5', "18:00"),
+    ('time6', "18:15"),
+    ('time7', "18:30"),
+    ('time8', "18:45"),
+    ('time9', "19:00"),
+    ('time10', "19:15"),
+    ('time11', "19:30"),
+    ('time12', "19:45"),
+    ('time13', "20:00"),
+    ('time14', "20:15"),
+    ('time15', "20:30"),
+    ('time16', "20:45"),
 ]
 
 
 PARTY_SIZE = [
-    ('1', '2'),
-    ('3', '4'),
-    ('5', '6'),
-    ('7', '8'),
-    ('9', '10'),
+    (1),
+    (2),
+    (3),
+    (4),
+    (5),
+    (6),
+    (7),
+    (8),
+    (9),
+    (10),
 ]
 
 
@@ -28,13 +41,13 @@ class ReservationForm(ModelForm):
     """
     Reservation Form
     """
-    name = forms.CharField(label='Enter Name: ', required=True, max_length=25)
+    name = forms.CharField(label='Enter Name ', required=True, max_length=25)
 
     day = forms.DateField(initial=datetime.date.today)
 
-    time = forms.ChoiceField(label='Time: ', choices=TIME_CHOICES)
+    time = forms.ChoiceField(label='Time ', choices=TIME_CHOICES)
 
-    party_size = forms.ChoiceField(label='Party Members: ', choices=PARTY_SIZE)
+    party_size = forms.ChoiceField(label='Party Members ', choices=PARTY_SIZE)
 
     class Meta:
         model = Reservation

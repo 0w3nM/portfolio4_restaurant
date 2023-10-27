@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from . import views
 from django.views import generic, View
 from django.contrib import messages
 from .models import Reservation
@@ -26,7 +27,7 @@ def create_reservation(request):
     User can create a reservation
     """
     if request.method == 'POST':
-        reservation_form = ReservationForm(request.POST, instance=request.user)
+        reservation_form = ReservationForm(request.POST)
         if reservation_form.is_valid():
             reservation_form.save()
             messages.success(request, 'Your reservation was successul.')
@@ -50,7 +51,7 @@ def update_reservation(request, booking_id):
     """
     booking = get_object_or_404(Reservation, id=booking_id)
     if request.method == 'POST':
-        reservation_form = ReservationForm(request.POST, instance=request.user)
+        reservation_form = ReservationForm(request.POST)
         if reservation_form.is_valid():
             messages.success(request,
                              'Your reservation was successully updated.')

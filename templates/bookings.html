@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <div class="row row-cols-1 row-cols-md-2 m-3 g-4">
-  {% for reservation in reservations %}
+  {% for reservation in reservation_list %}
   <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
     <div
       class="card manage border border-0 d-flex justify-content-center h-100 mx-2"
@@ -15,18 +15,9 @@
               <strong>Party Size:</strong> {{ reservation.party_size }}
             </p>
           </div>
-          <a
-            href="{% url 'update_booking' reservation.id %}"
-            class="btn btn-success"
-            >Update</a
-          >
-          <a
-            href="{% url 'remove_booking' reservation.id %}"
-            class="btn btn-danger"
-            data-bs-toggle="modal"
-            data-bs-target="#deleteMessage"
-            >Remove</a
-          >
+          <a href="{% url 'update_reservation' reservation.id %}">Update</a>
+
+          <a href="{% url 'remove_reservation' reservation.id %}">Remove</a>
           <div
             class="modal fade"
             id="deleteMessage"
@@ -58,7 +49,7 @@
                   </button>
                   <a
                     class="mt-2 mb-3 btn btn-secondary"
-                    href="{% url 'remove_booking' reservation.id %}"
+                    href="{% url 'remove_reservation' reservation.id %}"
                     >Remove</a
                   >
                 </div>
