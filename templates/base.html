@@ -23,7 +23,7 @@
   <body class="d-flex flex-column h-100 main-bg">
     <header>
         <div class="header">
-        <a href="{% url 'home'%}"><span class="red-word">Galaxy</span><span class="purple-word">Gourmet</span></a>
+        <a href="{% url 'booking:home'%}"><span class="red-word">Galaxy</span><span class="purple-word">Gourmet</span></a>
         </div>
 
         <!--Navigation-->
@@ -32,10 +32,10 @@
                 <ul class="navbar">
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="btn btn-primary" href="{% url 'create_reservation' %}" role="button">Book</a>
+                    <a class="btn btn-primary" href="{% url 'booking:create_reservations' %}" role="button">Book</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-info" href="{% url 'bookings' %}" role="button">Your Details</a>
+                    <a class="btn btn-info" href="{% url 'booking:bookings' %}" role="button">Your Details</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-danger" href="{% url 'account_logout' %}" role="button">SignOut</a>

@@ -31,7 +31,7 @@ def create_reservation(request):
         if reservation_form.is_valid():
             reservation_form.save()
             messages.success(request, 'Your reservation was successul.')
-            return redirect('bookings')
+            return redirect('booking:bookings')
         else:
             messages.error(request,
                            'Reservation wasnt successful. Please amend and try again.')
@@ -54,8 +54,8 @@ def update_reservation(request, booking_id):
         reservation_form = ReservationForm(request.POST)
         if reservation_form.is_valid():
             messages.success(request,
-                             'Your reservation was successully updated.')
-            return redirect('bookings')
+                             'Your reservation was successfully updated.')
+            return redirect('booking:bookings')
         else:
             messages.error(request,
                            'Reservation wsnt updated successfully. Please amend and try again.')
@@ -76,4 +76,4 @@ def remove_reservation(request, booking_id):
     booking.delete()
     messages.success(request,
                      'Your reservation has been sucessfully deleted')
-    return redirect('bookings')
+    return redirect('booking:bookings')
