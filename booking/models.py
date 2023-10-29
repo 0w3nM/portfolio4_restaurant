@@ -7,7 +7,7 @@ TIMES_AVAILABLE = [
     ('time1', "17:00"),
     ('time2', "17:15"),
     ('time3', "17:30"),
-    ('time4', "18:45"),
+    ('time4', "17:45"),
     ('time5', "18:00"),
     ('time6', "18:15"),
     ('time7', "18:30"),
@@ -39,8 +39,8 @@ PARTY_SIZE = [
 class Reservation(models.Model):
     name = models.CharField(max_length=25)
     day = models.DateField()
-    time = models.CharField(choices=TIMES_AVAILABLE, max_length=25)
-    party_size = models.CharField(choices=PARTY_SIZE, max_length=25)
+    time = models.CharField(choices=TIMES_AVAILABLE, max_length=10)
+    party_size = models.CharField(choices=PARTY_SIZE, max_length=10)
 
     def __str__(self):
         return self.name

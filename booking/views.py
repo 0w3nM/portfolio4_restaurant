@@ -30,7 +30,7 @@ def create_reservation(request):
         reservation_form = ReservationForm(request.POST)
         if reservation_form.is_valid():
             reservation_form.save()
-            messages.success(request, 'Your reservation was successul.')
+            messages.success(request, 'Your reservation was successful.')
             return redirect('booking:bookings')
         else:
             messages.error(request,
@@ -45,11 +45,11 @@ def create_reservation(request):
 
 # Update Reservation #
 
-def update_reservation(request, booking_id):
+def update_reservation(request, reservation_id):
     """
     User can amend a reservation
     """
-    booking = get_object_or_404(Reservation, id=booking_id)
+    booking = get_object_or_404(Reservation, id=reservation_id)
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST)
         if reservation_form.is_valid():
@@ -58,21 +58,26 @@ def update_reservation(request, booking_id):
             return redirect('booking:bookings')
         else:
             messages.error(request,
-                           'Reservation wsnt updated successfully. Please amend and try again.')
+                           'Reservation wasnt updated successfully. Please amend and try again.')
             reservation_form = ReservationForm()
             context = {
                 'form': reservation_form
             }
-        return render(request, 'update_reservation.html', context)
+    else:
+        reservation_form = ReservationForm()
+    context = {
+        'form': reservation_form
+    }
+    return render(request, 'update_reservation.html', context)
 
 
 # Delete Reservation #
 
-def remove_reservation(request, booking_id):
+def remove_reservation(request, reservation_id):
     """
-    User can delte a reservation
+    User can delete a reservation
     """
-    booking = get_object_or_404(Reservation, id=booking_id)
+    booking = get_object_or_404(Reservation, id=reservation_id)
     booking.delete()
     messages.success(request,
                      'Your reservation has been sucessfully deleted')
