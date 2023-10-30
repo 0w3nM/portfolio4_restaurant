@@ -48,7 +48,7 @@
     color: #191970 !important;
     text-align: center;
     box-sizing: border-box;
-}
+} 
 
 .text-body h3 strong {
     color: #4B0082;
@@ -67,15 +67,32 @@
 } */
 
 /*----Menu----*/
-.menu-header {
-    text-align: center;
-    color:#228B22;
+.card {    
+    color:#D50000;
     text-decoration: underline;
 }
 
-.
+.starter {
+    background-color: #B2DFBD;
+}
+.mains {
+    background-color: #FFD54F;
+}
+.sides {
+    background-color: #9CCC65;
+}
+.desserts {
+    background-color: #EA80FC;
+}
+.drinks {
+    background-color: #81D4FA;
+}
+
 
 /*----Times----*/
+.times {
+    background-color: #E0E0E0;
+}
 
 
 /*----Footer----*/

@@ -1,45 +1,38 @@
 # Galaxy Gourmet Website.
 
-
-
-
 # -Features
 
-- 
-  - 
+- -
 
- ![]()
+![]()
 
-- 
-  - 
-  - 
-  
-  ![]()
-  
-  ![]()
-  
-- 
-  - 
+- -
+  -
 
   ![]()
 
-- 
-  - 
-  - 
+  ![]()
+
+- -
+
+  ![]()
+
+- -
+  -
 
   ![]()
 
 # - Technologies used
 
-- 
-- 
-- 
+-
+-
+-
 
 # -Testing
 
-- 
+-
 
-- 
+-
 
 - ![lighthouse result]()
 
@@ -52,22 +45,22 @@
   ![JShint result]()
 
 - CSS - [W3C validator]()
-    ![css result]()
+  ![css result]()
 
 # Deployment-
 
 - The game was deployed to GitHub pages.
 - Live link to the page can be found here -
-  
+
 ## Web Browser used -
 
-- 
-- 
+-
+-
 
 ## Devices Used -
 
-    - 
-    - 
+    -
+    -
 
 # Credits-
 
@@ -75,13 +68,14 @@
 
 - Inspiration for the project came from:
 
-  - 
-  - 
-  - 
+  -
+  -
+  -
+
 ## Media-
 
-- 
-- 
 -
-- 
-- 
+-
+-
+-
+-

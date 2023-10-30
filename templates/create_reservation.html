@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% block content %}
 
 <h2 class="center-align">Reservation Details</h2>
 
@@ -9,16 +11,12 @@
         <div class="card-content white-text">
           <form method="post" action="">
             {% csrf_token %} {{ form.as_p }}
-            <input
-              type="submit"
-              value="Book"
-              class="btn btn-success submit-button"
-            />
+            <input type="submit" value="Book" class="btn btn-success submit-button">
           </form>
         </div>
       </div>
     </div>
   </div>
 </div>
-<br />
+<br>
 {%endblock%}

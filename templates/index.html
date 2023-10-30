@@ -1,6 +1,7 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block content %}
 
-<div class="col s12">      
+<div class="header">      
     <span class="text-body">
         <h3>Welcome to <strong>Galaxy Gourment</strong></h3>
         <p>Food that is <strong>OUT OF THIS WORLD!</strong></p>                
@@ -10,82 +11,76 @@
 
 <br>
 
-<div class="row card-panel blue-grey">
-    <h3 class="menu-header"><strong>Menu</strong></h3>
+<div class="card">
+    <div class="card-body">
+        <h4 class="mx-auto" style="width: 200px"><strong>Menu</strong></h4>
+    </div>
+</div>
 
-    <ul class="">
-        <li>
-            <div class="cyan darken-4"><strong>Starter</strong></div>
-            <div class="list-item orange darken-3"><p>Garlic Bread</p></div>
-            <div class=""><p>Nachos</p></div>
-            <div class=""><p>Soup of the Day</p></div>
-        </li>
-    </ul>
-    <ul class="">
-        <li>
-            <div class="green darken-3"><strong>Mains</strong></div>
-            <div class=""><p>Cheese Burger</p></div>
-            <div class=""><p>Steak</p></div>
-            <div class=""><p>Meat and Potato Pie</p></div>
-        </li>
-    </ul>
-    <ul class="">
-        <li>
-            <div class="teal darken-4"><strong>Sides</strong></div>
-            <div class=""><p>Chips</p></div>
-            <div class=""><p>Wedges</span></div>
-            <div class=""><p>Curly Chips</p>
-        </div>
-        </li>
-    </ul>
-    <ul class="">
-        <li>
-            <div class="orange darken-3"><strong>Dessert</strong></div>
-            <div class=""><p>Apple Pie</p></div>
-            <div class=""><p>Strawberry Pudding and Custard</p></div>
-            <div class=""><p>Ice Cream</p></div>
-        </li>
-    </ul>
-    <ul class="">
-        <li>
-            <div class="light-blue accent-4"><strong>Drinks</strong></div>
-            <div class=""><p>Beer</p></div>
-            <div class=""><p>Wine</p></div>
-            <div class=""><p>Pepsi</p></div>
-            <div class=""><p>Orange Juice</p>
-            </div>
-        </li>
-    </ul>
+<div class="container">
+    <div class="starter">       
+            <h3 class="mx-auto" style="width: 200px"><strong>Starter</strong></h3>
+            <div class="mx-auto" style="width: 200px"><p>Garlic Bread</p></div>
+            <div class="mx-auto" style="width: 200px"><p>Nachos</p></div>
+            <div class="mx-auto" style="width: 200px"><p>Soup of the Day</p></div>        
+    </div>
+    <div class="mains">        
+        <h3 class="mx-auto" style="width: 200px"><strong>Mains</strong></h3>
+        <div class="mx-auto" style="width: 200px"><p>Cheese Burger</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Steak</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Meat and Potato Pie</p></div>
+    </div>
+    <div class="sides">        
+        <h3 class="mx-auto" style="width: 200px"><strong>Sides</strong></h3>
+        <div class="mx-auto" style="width: 200px"><p>Chips</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Wedges</span></div>
+        <div class="mx-auto" style="width: 200px"><p>Curly Chips</p></div>  
+    </div>
+    <div class="desserts">      
+        <h3 class="mx-auto" style="width: 200px"><strong>Dessert</strong></h3>
+        <div class="mx-auto" style="width: 200px"><p>Apple Pie</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Strawberry Pudding and Custard</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Ice Cream</p></div>   
+    </div>
+    <div class="drinks">        
+        <h3 class="mx-auto" style="width: 200px"><strong>Drinks</strong></h3>
+        <div class="mx-auto" style="width: 200px"><p>Beer</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Wine</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Pepsi</p></div>
+        <div class="mx-auto" style="width: 200px"><p>Orange Juice</p></div>
+    </div>
 </div>
 
 <br>
 
-<div class="col s12 m8 offset-m2 l6 offset-l3">
-  <div class="card-panel grey lighten-5 z-depth-1">
-    <h3 class="text-upper">Times</h3>
-    <div class="container"></div>
-    <div class="container center">
-      <div class="row">
-        <div class="col s1">17:00</div>
-        <div class="col s1">17:15</div>
-        <div class="col s1">17:30</div>
-        <div class="col s1">17:45</div>
-        <div class="col s1">18:00</div>
-        <div class="col s1">18:15</div>
-        <div class="col s1">18:30</div>
-        <div class="col s1">18:45</div>
-        <div class="col s1">19:00</div>
-        <div class="col s1">19:15</div>
-        <div class="col s1">19:30</div>
-        <div class="col s1">19:45</div>
-        <div class="col s1">20:00</div>
-        <div class="col s1">20:15</div>
-        <div class="col s1">20:30</div>
-        <div class="col s1">20:45</div>
-      </div>
+<div class="times">
+   <h3 class="mx-auto" style="width: 200px">Times</h3>
+    <div class="container">
+        <div class="container center">
+            <div class="row">
+                <div class="col s1">17:00</div>
+                <div class="col s1">17:15</div>
+                <div class="col s1">17:30</div>
+                <div class="col s1">17:45</div>
+                <div class="col s1">18:00</div>
+                <div class="col s1">18:15</div>
+                <div class="col s1">18:30</div>
+                <div class="col s1">18:45</div>
+                <div class="col s1">19:00</div>
+                <div class="col s1">19:15</div>
+                <div class="col s1">19:30</div>
+                <div class="col s1">19:45</div>
+                <div class="col s1">20:00</div>
+                <div class="col s1">20:15</div>
+                <div class="col s1">20:30</div>
+                <div class="col s1">20:45</div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+
+
+<br>
 
 <!--Footer-->
 <footer>
@@ -93,7 +88,8 @@
         <div class="row">
             <div class="col 16 s12">
                 <p class="grey-text text-lighten-4">
-                    Follow us: <i class="fab fa-facebook-square ms-3"></i>
+                    Follow us: 
+                    <i class="fab fa-facebook-square ms-3"></i>
                     <i class="fab fa-twitter-square ms-3"></i>
                     <i class="fab fa-instagram-square ms-3"></i>
                     <i class="fab fa-youtube-square ms-3"></i>
