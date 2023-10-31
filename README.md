@@ -10,92 +10,92 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 
   - Favicon is dispalyed on the tab with the title of the page.
 
- -![Favicon](media/images/pp4_favicon_and_title.png)  
+ ![Favicon](media/images/pp4_favicon_and_title.png)  
 
   #### Title:
 
   - The title is also a link that will bring the user back to see the menu.
 
- -![Title](media/images/pp4_title.png)
+ ![Title](media/images/pp4_title.png)
 
 #### Menu Title:
 
  - A title showing users where the menu is.
   
- -![Menu Title](media/images/pp4_menu_title.png)  
+ ![Menu Title](media/images/pp4_menu_title.png)  
 
  #### Menu:
   
   - The menu shows what types of foods and drinks are avaiable.
 
- -![Top Menu](media/images/pp4_menu_1.png)
- -![Bottom Menu](media/images/pp4_menu_1.png)
+ ![Top Menu](media/images/pp4_menu_1.png)
+ ![Bottom Menu](media/images/pp4_menu_1.png)
 
 #### Time:
   
    - Times that aravaible to book are shown under the menu.
   
-  -![Times](media/images/pp4_times.png)
+  ![Times](media/images/pp4_times.png)
 
 #### Social Media:
   
   - The social media profiles are placed at the bottom of the page for users to click.
   
- -![Times](media/images/pp4_social_media.png)
+ ![Times](media/images/pp4_social_media.png)
 
  #### Creating a reservation:
   
   - Form to create a reservation.
 
-  -![Reservation Form](media/images/pp4_reservation_page.png)
+  ![Reservation Form](media/images/pp4_reservation_page.png)
 
 #### Reservations:
 
  - Reservations are all shown on this page to be view updated and deleted.
   
-  -![Details](media/images/pp4_details.png)
+  ![Details](media/images/pp4_details.png)
 
 #### Updating a reservation:
   
  - Form to update users reservation and success message. Images are placed at the bottom on the page to entice the user in placing an reservation to try the food.
 
-  -![Update Form](media/images/pp4_update.png)
-  -![Success Message](media/images/pp4_update_confirmantion.png)
-  -![Burger](media/images/pp4_image_1.png)
-  -![Steak](media/images/pp4_image_2.png)
+  ![Update Form](media/images/pp4_update.png)
+  ![Success Message](media/images/pp4_update_confirmantion.png)
+  ![Burger](media/images/pp4_image_1.png)
+  ![Steak](media/images/pp4_image_2.png)
 
 #### Deleting Reservations:
 
  - Reservations are removed once the delete button is pressed with a confirmation message
   
-  -![Delete](media/images/pp4_succesfull_deletion.png)
+  ![Delete](media/images/pp4_succesfull_deletion.png)
 
 
 #### Account Creation and sign in bar:
   
    - Allows new and existing users to make an account or sign in to one the already have.
 
-  -![Account Nav Bar](media/images/pp4_sign_in_nav_bar.png)
+  ![Account Nav Bar](media/images/pp4_sign_in_nav_bar.png)
 
 #### Sign Out:
 
   - Users have the ablity to sign out of thier account, with a success message.
   
-  -![Sign Out](media/images/pp4_sign_out.png)
-  -![Success Message](media/images/pp4_sign_out_confirmation.png)
+  ![Sign Out](media/images/pp4_sign_out.png)
+  ![Success Message](media/images/pp4_sign_out_confirmation.png)
 
 #### Sign In:
   
   - Page allows users to sign in with their details with a success message.
 
-  -![Sign in Page](media/images/pp4_sign_in_page.png)
-  -![Success Message](media/images/pp4_sign_in_confirmation.png)
+  ![Sign in Page](media/images/pp4_sign_in_page.png)
+  ![Success Message](media/images/pp4_sign_in_confirmation.png)
 
 #### Sign Up page:
 
  - Page allows users to make an account.
   
-  -![Sign up](media/images/pp4_sign_up_page.png)
+  ![Sign up](media/images/pp4_sign_up_page.png)
   
 
 # -Technologies used-
@@ -142,7 +142,7 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 
 ## -Devices Used -
 
-  - 12th Gen Intel (R) Core TM i7-12700F - Desktop    -
+  - 12th Gen Intel (R) Core TM i7-12700F - Desktop
 
 # -Credits-
 
@@ -151,6 +151,15 @@ There are variou fonts used to make the website feel less bland. They are Oswald
   - 'I think before i blog' walkthrough on [CodeInstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) 
   - Other students on the Code Insitiute course through the [Slack](https://slack.com/intl/en-gb/get-started#/createnew) website.
   - Tutors on Tutor Assistance[CodeInstitue](https://learn.codeinstitute.net/ci_support/diplomainfullstacksoftwarecommoncurriculum/tutor)
+  - [Favicon] from (https://www.favicon.cc/)
+  - For [Messages](https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#using-messages-in-views-and-templates/) was used.
+  - When i had an error for [Positonal Arguments](https://stackoverflow.com/questions/68572656/django-missing-1-required-positional-argument-id/)
+  - To understand [Views](https://stackoverflow.com/questions/26258905/the-view-didnt-return-an-httpresponse-object-it-returned-none-instead/) as well as (https://docs.djangoproject.com/en/4.2/ref/class-based-views/base/#django.views.generic.base.View/)
+  - To view forms as a [Paragraph](https://www.geeksforgeeks.org/form-as_p-render-django-forms-as-paragraph/) was used to understand it better.
+  - When i got a [NoReverseMatchError](https://stackoverflow.com/questions/38390177/what-is-a-noreversematch-error-and-how-do-i-fix-it /) helped solve the issue.
+  - Learning how [allauth](https://docs.allauth.org/en/latest/)worked.
+  - Styling with [Grid](https://materializecss.com/grid.html/ ) and [Color](https://getbootstrap.com/docs/5.0/utilities/colors/) & (https://materializecss.com/color.html/) came in helpful.
+- What content to use in a [Form]( https://docs.djangoproject.com/en/4.2/topics/forms/), (https://www.youtube.com/watch?v=ncradqkSzCw/).
 
 ## -Media-
 
