@@ -1,24 +1,27 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<div class="row row-cols-1 row-cols-md-2 m-3 g-4">
+{% extends 'base.html' %} {% block content %}
+<div class="row g-5">    
   {% for reservation in reservation_list %}
-  <div class="col-md-4 offset-md-4 col-sm-4">
-        <div class="card border border-info justify-content-center h-100">
-            <div class="card-body h-100">
-                <h4 class="text-center">Reservation Name: {{ reservation.name }}</h4>
-                <div class="card-text">
-                    <div class="text-center">
-                        <p class="mb-2"><strong>Day:</strong> {{ reservation.day }}</p>
-                        <p class="mb-2"><strong>Time:</strong> {{ reservation.time }}</p>
-                        <p class="mb-2"><strong>Party Size:</strong> {{ reservation.party_size }}</p>
-                    </div>
-                    <a href="{% url 'booking:update_reservation' reservation.id %}" class="btn btn-success">Update</a>
-                    <a href="{% url 'booking:remove_reservation' reservation.id  %}" class="btn btn-danger">Delete</a>          
-                </div>
-            </div>
+  <div class="col-md-5 offset-md-3 col-sm-3">
+    <div class="card border border-info justify-content-center h-100">
+      <div class="card-body">
+        <h4 class="text-center"><strong>Reservation Name:</strong> {{ reservation.name }}</h4>
+        <div class="card-text">
+          <div class="text-center">
+            <p class="mb-2"><strong>Day:</strong> {{ reservation.day }}</p>
+            <p class="mb-2"><strong>Time:</strong> {{ reservation.get_time_display }}</p>
+            <p class="mb-2"><strong>Party Size:</strong> {{ reservation.get_party_size_display }}
+            </p>
+          </div>
+          <a href="{% url 'booking:update_reservation' reservation.id %}" class="btn btn-success">Update</a>
+          <a href="{% url 'booking:remove_reservation' reservation.id  %}" class="btn btn-danger">Delete</a>
         </div>
-    </div>    
+      </div>
+    </div>
+  </div>
   {% endfor %}
+<div class="container">
+    <img src="https://res.cloudinary.com/dmtng0i7p/image/upload/c_fit,h_700,w_700/v1698705303/PP4_Restaurant/pexels-roman-odintsov-5836777_dhnkry.jpg" class="rounded float-start" alt="Burger with a table of food behind it">
+    <img src="https://res.cloudinary.com/dmtng0i7p/image/upload/c_scale,h_700,w_700/v1698705243/PP4_Restaurant/pexels-pixabay-361184_zp3k3t.jpg" class="rounded float-end" alt="Steak meal with vegetables">
 </div>
-{% endblock content %}
+</div>
+{% endblock content %} 

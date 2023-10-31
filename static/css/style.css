@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playpen+Sans:wght@600&family=Skranji:wght@700&family=Titillium+Web:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Playpen+Sans:wght@600&family=Skranji:wght@700&family=Titillium+Web:wght@300&display=swap");
 
 /* -----Header----*/
 .header {
-    background-color: #FFFAF0;
+    background-color: #fffaf0;
     font-size: x-large;
     text-align: center;
 }
@@ -10,12 +10,12 @@
 .red-word {
     color: #dc143c;
     font-size: xx-large;
-    font-family: 'Playpen Sans', 'sans-serif';
+    font-family: "Playpen Sans", "sans-serif";
 }
 
 .purple-word {
     color: #8b008b;
-    font-family: 'Titillium Web', 'sans-serif';
+    font-family: "Titillium Web", "sans-serif";
 }
 
 /* ----Nav Bar----*/
@@ -26,21 +26,21 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: aliceblue;
-    border: 2px solid #228B22;
+    border: 2px solid #228b22;
     list-style: none;
 }
 
 .nav-item {
     font-size: large;
-    font-family: 'Oswald', 'sans-serif';
+    font-family: "Oswald", "sans-serif";
     text-decoration: overline;
 }
 
-.nav-link {    
+.nav-link {
     display: block;
     padding: 0.5rem 1rem;
     color: #000000;
-    text-decoration: none;        
+    text-decoration: none;
 }
 
 /*----Text Body----*/
@@ -48,51 +48,149 @@
     color: #191970 !important;
     text-align: center;
     box-sizing: border-box;
-} 
+}
 
 .text-body h3 strong {
-    color: #4B0082;
+    color: #4b0082;
 }
 
 .text-body p strong {
-    color: #FF4500;
+    color: #ff4500;
+    text-align: center;
 }
 
-/* p {
+p {
     margin-top: 0;
     margin-bottom: 1rem;
     color: darkred;
     font-size: larger;
     font-family: 'Skranji', 'sans-serif';
-} */
+}
 
 /*----Menu----*/
-.card {    
-    color:#D50000;
-    text-decoration: underline;
+.card {
+   color: #d50000;
+   text-decoration: underline;
+   text-align: center;
+}
+
+.card h4 {
+    font-size:x-large;
 }
 
 .starter {
-    background-color: #B2DFBD;
-}
-.mains {
-    background-color: #FFD54F;
-}
-.sides {
-    background-color: #9CCC65;
-}
-.desserts {
-    background-color: #EA80FC;
-}
-.drinks {
-    background-color: #81D4FA;
+  background-color: #b2dfbd;
 }
 
+.starter p {
+    text-align: center;
+}
+
+.starter h3 {
+    text-align: center;
+    color: #8B008B;
+    text-decoration: underline;
+}
+
+.mains {
+    background-color: #ffd54f;
+}
+
+.mains p {
+    text-align: center;
+}
+
+.mains h3 {
+    text-align: center;
+    color: #2F4F4F;
+    text-decoration: underline;
+}
+
+.sides {
+    background-color: #9ccc65;
+}
+
+.sides p {
+    text-align: center;
+}
+
+.sides h3 {
+    text-align: center;
+    color: #00008B;
+    text-decoration: underline;
+}
+
+.desserts {
+  background-color: #FFDEAD;
+}
+
+.desserts p {
+    text-align: center;
+}
+
+.desserts h3 {
+    text-align: center;
+    color: #006400;
+    text-decoration: underline;
+}
+
+.drinks {
+    background-color: #81d4fa;
+}
+
+.drinks p {
+    text-align: center;
+}
+
+.drinks h3 {
+    text-align: center;
+    color:#8b008b;
+    text-decoration: underline;
+}
 
 /*----Times----*/
 .times {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
 }
 
+.times h3 {
+    text-align: center;
+}
+
+.times span{
+    background-color: #FFFFF0;
+    text-align: center;
+}
 
 /*----Footer----*/
+
+.footer {
+    margin-top: auto;
+    background-color: #5F9EA0;
+}
+
+.socials {
+    text-align: center;
+    margin: 0;
+}
+
+.socials>li {
+    display: inline;
+
+}
+
+.socials i {
+    font-size: 2.1rem;
+    align-items: center;
+    margin: 0.6em auto;
+    padding: 0 90px;
+    color: #4B0082;
+}
+
+/*----Booking----*/
+.card-content {
+    color: #F4A460;
+    text-decoration: underline;
+    text-align: center;
+    background-color: #778899;
+}

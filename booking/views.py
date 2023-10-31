@@ -33,8 +33,7 @@ def create_reservation(request):
             messages.success(request, 'Your reservation was successful.')
             return redirect('booking:bookings')
         else:
-            messages.error(request,
-                           'Reservation wasnt successful. Please amend and try again.')
+            messages.error(request, 'Reservation wasnt successful. Please amend and try again.')
     else:
         reservation_form = ReservationForm()
     context = {
