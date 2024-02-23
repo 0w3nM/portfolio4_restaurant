@@ -30,9 +30,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-0w3nm-portfolio4-restaur-n1c2ojat1g.us2.codeanyapp.com',
+ALLOWED_HOSTS = ['8000-0w3nm-portfolio4restau-pzva94husk8.ws-eu108.gitpod.io',
                  'pp4-restaurant-3d48ee918232.herokuapp.com', 'localhost']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -45,12 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'cloudinary_storage',    
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'cloudinary_storage',
-    'django.contrib.staticfiles',
     'cloudinary',
     'booking',
 ]
