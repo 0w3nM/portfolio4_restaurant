@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from . import views
 from django.views import generic, View
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib import messages
 from .models import Reservation
 from .forms import ReservationForm
@@ -12,17 +13,24 @@ def home(request):
 
 # View Reservations #
 
-
-class ReservationList(generic.ListView):
+class ReservationList(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
     model = Reservation
     template_name = 'bookings.html'
     queryset = Reservation.objects.all()
     paginate_by = 5
 
 
+    def test_func(self):
+        """ Checks for user """"
+        if self.request.user.is_user:
+            return True
+        else:
+            return False
+
+
 # Create Reservation #
 
-def create_reservation(request):
+def create_reservation(LoginRequiredMixin, UserPassesTestMixin, request):
     """
     User can create a reservation
     """
@@ -41,10 +49,17 @@ def create_reservation(request):
     }
     return render(request, 'create_reservation.html', context)
 
+    def test_func(self):
+        """ Checks for user """"
+        if self.request.user.is_user:
+            return True
+        else:
+            return False
+
 
 # Update Reservation #
 
-def update_reservation(request, reservation_id):
+def update_reservation(LoginRequiredMixin, UserPassesTestMixin, request, reservation_id):
     """
     User can amend a reservation
     """
@@ -69,10 +84,17 @@ def update_reservation(request, reservation_id):
     }
     return render(request, 'update_reservation.html', context)
 
+    def test_func(self):
+        """ Checks for user """"
+        if self.request.user.is_user:
+            return True
+        else:
+            return False
+
 
 # Delete Reservation #
 
-def remove_reservation(request, reservation_id):
+def remove_reservation(LoginRequiredMixin, UserPassesTestMixin, request, reservation_id):
     """
     User can delete a reservation
     """
@@ -81,3 +103,10 @@ def remove_reservation(request, reservation_id):
     messages.success(request,
                      'Your reservation has been sucessfully deleted')
     return redirect('booking:bookings')
+
+    def test_func(self):
+        """ Checks for user """"
+        if self.request.user.is_user:
+            return True
+        else:
+            return False
