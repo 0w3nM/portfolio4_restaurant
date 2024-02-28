@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from . import views
 from django.views import generic, View
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from .models import Reservation
 from .forms import ReservationForm
@@ -12,25 +13,15 @@ def home(request):
     return render(request, 'index.html')
 
 # View Reservations #
-
-class ReservationList(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
+class ReservationList(LoginRequiredMixin, generic.ListView):
     model = Reservation
     template_name = 'bookings.html'
     queryset = Reservation.objects.all()
-    paginate_by = 5
-
-
-    def test_func(self):
-        """ Checks for user """"
-        if self.request.user.is_user:
-            return True
-        else:
-            return False
-
+    paginate_by = 5   
 
 # Create Reservation #
-
-def create_reservation(LoginRequiredMixin, UserPassesTestMixin, request):
+@login_required
+def create_reservation(request):
     """
     User can create a reservation
     """
@@ -49,17 +40,9 @@ def create_reservation(LoginRequiredMixin, UserPassesTestMixin, request):
     }
     return render(request, 'create_reservation.html', context)
 
-    def test_func(self):
-        """ Checks for user """"
-        if self.request.user.is_user:
-            return True
-        else:
-            return False
-
-
 # Update Reservation #
-
-def update_reservation(LoginRequiredMixin, UserPassesTestMixin, request, reservation_id):
+@login_required  
+def update_reservation(request, reservation_id):
     """
     User can amend a reservation
     """
@@ -82,19 +65,12 @@ def update_reservation(LoginRequiredMixin, UserPassesTestMixin, request, reserva
     context = {
         'form': reservation_form
     }
-    return render(request, 'update_reservation.html', context)
-
-    def test_func(self):
-        """ Checks for user """"
-        if self.request.user.is_user:
-            return True
-        else:
-            return False
+    return render(request, 'update_reservation.html', context)    
 
 
 # Delete Reservation #
-
-def remove_reservation(LoginRequiredMixin, UserPassesTestMixin, request, reservation_id):
+@login_required
+def remove_reservation(request, reservation_id):
     """
     User can delete a reservation
     """
@@ -102,11 +78,5 @@ def remove_reservation(LoginRequiredMixin, UserPassesTestMixin, request, reserva
     booking.delete()
     messages.success(request,
                      'Your reservation has been sucessfully deleted')
-    return redirect('booking:bookings')
-
-    def test_func(self):
-        """ Checks for user """"
-        if self.request.user.is_user:
-            return True
-        else:
-            return False
+    return redirect('booking:bookings')   
+    
