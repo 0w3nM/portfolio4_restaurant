@@ -17,7 +17,10 @@ class ReservationList(LoginRequiredMixin, generic.ListView):
     model = Reservation
     template_name = 'bookings.html'
     queryset = Reservation.objects.all()
-    paginate_by = 5   
+    paginate_by = 5
+
+    def get_queryset(self):
+        return Reservation.objects.filter(user=self.request.user)
 
 # Create Reservation #
 @login_required

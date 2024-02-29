@@ -37,6 +37,7 @@ PARTY_SIZE = [
 
 
 class Reservation(models.Model):
+    user = models.ForeignKey(User, default=None, on_delete=models.CASCADE)
     name = models.CharField(max_length=25)
     day = models.DateField()
     time = models.CharField(choices=TIMES_AVAILABLE, max_length=10)
