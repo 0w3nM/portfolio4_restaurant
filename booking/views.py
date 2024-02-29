@@ -26,7 +26,7 @@ def create_reservation(request):
     User can create a reservation
     """
     if request.method == 'POST':
-        reservation_form = ReservationForm(request.POST)
+        reservation_form = ReservationForm(request.POST, instance = booking)
         if reservation_form.is_valid():
             reservation_form.save()
             messages.success(request, 'Your reservation was successful.')
