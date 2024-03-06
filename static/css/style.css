@@ -67,6 +67,10 @@ p {
     font-family: 'Skranji', 'sans-serif';
 }
 
+.heading-text{
+    color: #ffffff;
+}
+
 /*----Menu----*/
 .card {
    color: #d50000;
@@ -160,6 +164,16 @@ p {
 .times span{
     background-color: #FFFFF0;
     text-align: center;
+}
+
+/* ----Links----*/
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #00FFFF;
 }
 
 /*----Footer----*/
