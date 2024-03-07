@@ -67,10 +67,6 @@ p {
     font-family: 'Skranji', 'sans-serif';
 }
 
-.heading-text{
-    color: #ffffff;
-}
-
 /*----Menu----*/
 .card {
    color: #d50000;
@@ -168,12 +164,12 @@ p {
 
 /* ----Links----*/
 a {
-    color: #ffffff;
+    color: #b22222;
     text-decoration: underline;
 }
 
 a:hover{
-    color: #00FFFF;
+    color: #228b22;
 }
 
 /*----Footer----*/
