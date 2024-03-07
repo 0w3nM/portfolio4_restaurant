@@ -158,4 +158,4 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 
 ## -Media-
 
-  - Images from [Pexels](https://www.pexels.com/)
+  - Images for the background of the pages were taken and used from [Pexels](https://www.pexels.com/)
