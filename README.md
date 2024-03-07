@@ -117,16 +117,11 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 -Testing can be found on this page:[TESTING.md](TESTING.md)
 
 
-# -Bugs -
-
-    - The sign in/ out and Account Creation page wouldnt style when css was applied.
-    - Images on the Reservaiuon details page are not in wouldnt form correctly.
-
 
 # -Deployment-
     Deploying on Heroku:
 
-- Create an account on Herku
+- Create an account on Heroku.
 - Click on a new app.
 - In the settings, got to the Config Vars.
 - In the Config Vars, add the Enviroment Variables.
@@ -148,18 +143,18 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 
 ## Content
 
-  - 'I think before i blog' walkthrough on [CodeInstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) 
-  - Other students on the Code Insitiute course through the [Slack](https://slack.com/intl/en-gb/get-started#/createnew) website.
-  - Tutors on Tutor Assistance[CodeInstitue](https://learn.codeinstitute.net/ci_support/diplomainfullstacksoftwarecommoncurriculum/tutor)
-  - [Favicon] from (https://www.favicon.cc/)
-  - For [Messages](https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#using-messages-in-views-and-templates/) was used.
-  - When i had an error for [Positonal Arguments](https://stackoverflow.com/questions/68572656/django-missing-1-required-positional-argument-id/)
-  - To understand [Views](https://stackoverflow.com/questions/26258905/the-view-didnt-return-an-httpresponse-object-it-returned-none-instead/) as well as (https://docs.djangoproject.com/en/4.2/ref/class-based-views/base/#django.views.generic.base.View/)
-  - To view forms as a [Paragraph](https://www.geeksforgeeks.org/form-as_p-render-django-forms-as-paragraph/) was used to understand it better.
-  - When i got a [NoReverseMatchError](https://stackoverflow.com/questions/38390177/what-is-a-noreversematch-error-and-how-do-i-fix-it /) helped solve the issue.
-  - Learning how [allauth](https://docs.allauth.org/en/latest/)worked.
-  - Styling with [Grid](https://materializecss.com/grid.html/ ) and [Color](https://getbootstrap.com/docs/5.0/utilities/colors/) & (https://materializecss.com/color.html/) came in helpful.
-- What content to use in a [Form]( https://docs.djangoproject.com/en/4.2/topics/forms/), (https://www.youtube.com/watch?v=ncradqkSzCw/).
+  - 'I think before i blog' walkthrough was used as a template to help create the project through [CodeInstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/). 
+  - Other students questions and previous projects on the the same subject such as [Garth McGirr](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak/blob/main/README.md) & [Ali Okeeffe](https://github.com/AliOKeeffe/PP4_My_Meal_Planner/blob/main/README.md) were used as a guide and further understand on the project creation through [Slack](https://slack.com/intl/en-gb/get-started#/createnew).
+  - When a problem occured Tutors on Tutor Assistance link was used through [CodeInstitue](https://learn.codeinstitute.net/ci_support/diplomainfullstacksoftwarecommoncurriculum/tutor).
+  - An image was placed on the browser tab and was created through [Favicon](https://www.favicon.cc/).
+  - To show messages to the user, whe website offered helpful tips on how to show the [Messages](https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#using-messages-in-views-and-templates/).
+  - When i came across an error i used [Positonal Arguments](https://stackoverflow.com/questions/68572656/django-missing-1-required-positional-argument-id/).
+  - When i struggled and needed to understand the fix i looked at page for [Views](https://stackoverflow.com/questions/26258905/the-view-didnt-return-an-httpresponse-object-it-returned-none-instead/) i also used this link for help on [Views](https://docs.djangoproject.com/en/4.2/ref/class-based-views/base/#django.views.generic.base.View/).
+  - When it came to view forms as a paragraph and understand the process better i used the link on [Paragraph](https://www.geeksforgeeks.org/form-as_p-render-django-forms-as-paragraph/).
+  - When i got a error the issue was solved when i used the link for [NoReverseMatchError](https://stackoverflow.com/questions/38390177/what-is-a-noreversematch-error-and-how-do-i-fix-it/).
+  - When i was stuck on the understanding on the usage of was used i looked into [allauth](https://docs.allauth.org/en/latest/).
+  - Understanding the styling  of my project was used with [Grid](https://materializecss.com/grid.html/) and when the colors were need i used both a bootstrap site for their tips on [Colors](https://getbootstrap.com/docs/5.0/utilities/colors/) &  i also used this site for their helpful tips on [Color](https://materializecss.com/color.html/).
+  - When it came to creating a form for my project i used 2 different links. The first was this link on how to craft a [Form](https://docs.djangoproject.com/en/4.2/topics/forms/), and the second was a video on [YouTube](https://www.youtube.com/watch?v=ncradqkSzCw/).
 
 ## -Media-
 
