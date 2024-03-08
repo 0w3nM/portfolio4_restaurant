@@ -12,6 +12,7 @@ from .forms import ReservationForm
 def home(request):
     return render(request, 'index.html')
 
+
 # View Reservations #
 class ReservationList(LoginRequiredMixin, generic.ListView):
     model = Reservation
@@ -22,6 +23,7 @@ class ReservationList(LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return Reservation.objects.filter(user=self.request.user)
 
+
 # Create Reservation #
 @login_required
 def create_reservation(request):
@@ -30,7 +32,7 @@ def create_reservation(request):
     """
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST)
-        if reservation_form.is_valid():            
+        if reservation_form.is_valid():
             reservation = reservation_form.save(commit=False)
             reservation.user = request.user
             reservation.approved = False
@@ -38,7 +40,8 @@ def create_reservation(request):
             messages.success(request, 'Your reservation was successful.')
             return redirect('booking:bookings')
         else:
-            messages.error(request, 'There is an error with your reservation. Please check all fields, amend and try again.')
+            messages.error(request, 'There is an error with your reservation.\
+                    Please check all fields, amend and try again.')
     else:
         reservation_form = ReservationForm()
     context = {
@@ -46,8 +49,9 @@ def create_reservation(request):
     }
     return render(request, 'create_reservation.html', context)
 
+
 # Update Reservation #
-@login_required  
+@login_required
 def update_reservation(request, reservation_id):
     """
     User can amend a reservation
@@ -61,7 +65,8 @@ def update_reservation(request, reservation_id):
             return redirect('booking:bookings')
         else:
             messages.error(request,
-                           'Reservation wasnt updated successfully. Please amend and try again.')
+                           'Reservation wasnt updated successfully.\
+                           Please amend and try again.')
             reservation_form = ReservationForm()
             context = {
                 'form': reservation_form
@@ -71,7 +76,7 @@ def update_reservation(request, reservation_id):
     context = {
         'form': reservation_form
     }
-    return render(request, 'update_reservation.html', context)    
+    return render(request, 'update_reservation.html', context)
 
 
 # Delete Reservation #
@@ -84,5 +89,4 @@ def remove_reservation(request, reservation_id):
     booking.delete()
     messages.success(request,
                      'Your reservation has been sucessfully deleted')
-    return redirect('booking:bookings')   
-    
+    return redirect('booking:bookings')
