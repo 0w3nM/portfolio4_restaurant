@@ -105,11 +105,31 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
 
 #### Images
+  - Below are the images that were used as the background images for the html pages.
+
   ![Burger](media/images/pp4_background_image_burger.jpg)
+
+  - The burger is used on the landing page that the users see.
+
   ![Steak](media/images/pp4_background_image_steak.jpg)
+
+  - The steak is used when the user is veiwing their reservations.
+
   ![Ice Cream](media/images/pp4_background_image_ice-cream.jpg)
+
+  - The Ice Cream is on the page for when a user is creating an account.
+
   ![Pasta](media/images/pp4_background_image_pasta.jpg)
+
+  - The pasta is used for the page when the user is creating a reservation.
+
   ![Pizza](media/images/pp4_background_image_pizza.jpg)
+
+  - The pizza is used when the user signs in.
+
+  ![Soup](media/images/pp4_background_image_soup.jpg)
+  
+  - The soup is used on the logout page.
     
 
 # -Technologies used-
