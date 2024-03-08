@@ -10,13 +10,20 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
   - Favicon is dispalyed on the tab with the title of the page.
 
- ![Favicon](media/images/pp4_favicon_and_title.png)  
+ ![Favicon](media/images/pp4_favicon_and_name.png)  
 
   #### Title:
 
   - The title is also a link that will bring the user back to see the menu.
 
- ![Title](media/images/pp4_title.png)
+ ![Title](media/images/pp4_title_unhighlighted.png)
+
+ ![Title](media/images/pp4_title_highlighted.png)
+
+ ### Welcome Message:
+ - A welcome message is shown to the users that tells the users what information is.
+
+ ![Message](media/images/pp4_welcome_message.png)
 
 #### Menu Title:
 
@@ -28,8 +35,8 @@ There are various fonts used to make the website feel less bland. They are Oswal
   
   - The menu shows what types of foods and drinks are avaiable.
 
- ![Top Menu](media/images/pp4_menu_1.png)
- ![Bottom Menu](media/images/pp4_menu_1.png)
+ ![Top Menu](media/images/pp4_top_menu.png)
+ ![Bottom Menu](media/images/pp4_bottom_menu.png)
 
 #### Time:
   
@@ -41,25 +48,25 @@ There are various fonts used to make the website feel less bland. They are Oswal
   
   - The social media profiles are placed at the bottom of the page for users to click.
   
- ![Times](media/images/pp4_social_media.png)
+ ![Times](media/images/pp4_social_media_links.png)
 
  #### Creating a reservation:
   
   - Form to create a reservation.
 
-  ![Reservation Form](media/images/pp4_reservation_page.png)
+  ![Reservation Form](media/images/pp4_reservation_form.png)
 
 #### Reservations:
 
  - Reservations are all shown on this page to be view updated and deleted.
   
-  ![Details](media/images/pp4_details.png)
+  ![Details](media/images/pp4_reservation_made.png)
 
 #### Updating a reservation:
   
  - Form to update users reservation and success message. Images are placed at the bottom on the page to entice the user in placing an reservation to try the food.
 
-  ![Update Form](media/images/pp4_update.png)
+  ![Update Form](media/images/pp4_reservation_updated.png)
   ![Success Message](media/images/pp4_update_confirmantion.png)
   ![Burger](media/images/pp4_image_1.png)
   ![Steak](media/images/pp4_image_2.png)
@@ -68,34 +75,34 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
  - Reservations are removed once the delete button is pressed with a confirmation message.
   
-  ![Delete](media/images/pp4_succesfull_deletion.png)
+  ![Delete](media/images/pp4_deleted_reservation.png)
 
 
 #### Account Creation and sign in bar:
   
    - Allows new and existing users to make an account or sign in to one the already have.
 
-  ![Account Nav Bar](media/images/pp4_sign_in_nav_bar.png)
+  ![Account Nav Bar](media/images/pp4_signed_out_nav_bar.png)
 
 #### Sign Out:
 
   - Users have the ablity to sign out of thier account, with a success message.
   
-  ![Sign Out](media/images/pp4_sign_out.png)
+  ![Sign Out](media/images/pp4_signout_page.png)
   ![Success Message](media/images/pp4_sign_out_confirmation.png)
 
 #### Sign In:
   
   - Page allows users to sign in with their details with a success message.
 
-  ![Sign in Page](media/images/pp4_sign_in_page.png)
+  ![Sign in Page](media/images/pp4_login.png)
   ![Success Message](media/images/pp4_sign_in_confirmation.png)
 
 #### Sign Up page:
 
  - Page allows users to make an account.
   
-  ![Sign up](media/images/pp4_sign_up_page.png)
+  ![Sign up](media/images/pp4_account_register.png)  
   
 
 # -Technologies used-
