@@ -1,6 +1,7 @@
 from . import views
 from django.urls import path
-from booking.views import create_reservation, update_reservation, remove_reservation
+from booking.views import\
+    create_reservation, update_reservation, remove_reservation
 
 app_name = 'booking'
 
