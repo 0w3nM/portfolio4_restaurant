@@ -105,11 +105,11 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
 
 #### Images
-  ![Burger](media/images/pp4_background_image_burger.png)
-  ![Steak](media/images/pp4_background_image_steak.png)
-  ![Ice Cream](media/images/pp4_background_image_ice-cream.png)
-  ![Pasta](media/images/pp4_background_image_pasta.png)
-  ![Pizza](media/images/pp4_background_image_pizza.png)
+  ![Burger](media/images/pp4_background_image_burger.jpg)
+  ![Steak](media/images/pp4_background_image_steak.jpg)
+  ![Ice Cream](media/images/pp4_background_image_ice-cream.jpg)
+  ![Pasta](media/images/pp4_background_image_pasta.jpg)
+  ![Pizza](media/images/pp4_background_image_pizza.jpg)
     
 
 # -Technologies used-
