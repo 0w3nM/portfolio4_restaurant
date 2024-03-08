@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.core.exceptions import ValidationError
+from django.utils import timezone
 
 
 TIMES_AVAILABLE = [
@@ -36,10 +38,15 @@ PARTY_SIZE = [
 ]
 
 
+def validate_future_date(value):
+    if value < timezone.now().date():
+        raise ValidationError('Date cannot be in the past')
+
+
 class Reservation(models.Model):
     user = models.ForeignKey(User, default=None, on_delete=models.CASCADE)
     name = models.CharField(max_length=25)
-    day = models.DateField()
+    day = models.DateField(validators=[validate_future_date])
     time = models.CharField(choices=TIMES_AVAILABLE, max_length=10)
     party_size = models.CharField(choices=PARTY_SIZE, max_length=10)
 
