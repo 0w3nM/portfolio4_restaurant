@@ -68,8 +68,7 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
   ![Update Form](media/images/pp4_reservation_updated.png)
   ![Success Message](media/images/pp4_update_confirmantion.png)
-  ![Burger](media/images/pp4_image_1.png)
-  ![Steak](media/images/pp4_image_2.png)
+  
 
 #### Deleting Reservations:
 
@@ -103,7 +102,15 @@ There are various fonts used to make the website feel less bland. They are Oswal
  - Page allows users to make an account.
   
   ![Sign up](media/images/pp4_account_register.png)
-  
+
+
+#### Images
+  ![Burger](media/images/pp4_background_image_burger.png)
+  ![Steak](media/images/pp4_background_image_steak.png)
+  ![Ice Cream](media/images/pp4_background_image_ice-cream.png)
+  ![Pasta](media/images/pp4_background_image_pasta.png)
+  ![Pizza](media/images/pp4_background_image_pizza.png)
+    
 
 # -Technologies used-
 
