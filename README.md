@@ -18,7 +18,11 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
  ![Title](media/images/pp4_title_unhighlighted.png)
 
+ -  The top image shows the link, when the user hasnt hovered over it.
+
  ![Title](media/images/pp4_title_highlighted.png)
+
+ - The bottom image shows the link when the user hovers over it and it changes colour.
 
  ### Welcome Message:
  - A welcome message is shown to the users that tells the users what information is.
@@ -104,7 +108,7 @@ There are various fonts used to make the website feel less bland. They are Oswal
   ![Sign up](media/images/pp4_account_register.png)
 
 
-#### Images
+#### Images:
   - Below are the images that were used as the background images for the html pages.
 
   ![Burger](media/images/pp4_background_image_burger.jpg)
