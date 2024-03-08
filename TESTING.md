@@ -49,6 +49,32 @@ style.css - [Errors](media/images/pp4_css_validation.png)
 
 ## Testing User Stories
 
+- Menu:
+
+- Site Navigation:
+
+- Account Sign-Up:
+
+- Making A Reservation:
+
+- Confirmation Message:
+
+- Only Users Reservations Show Up:
+
+- Dropdown Menu of Users Names Hidden From The Reservation Form:
+
+- Stop Users From Selecting Previous Dates:
+
+- Update Reservations:
+
+- Delete Reservations:
+
+- Sign In: 
+
+- Sign Out:
+
+- Block Users From Accessing Site Witout Signing In:
+
 ---
 
 ## Bugs Encountered and Resolutions
