@@ -1,8 +1,8 @@
 # Galaxy Gourmet Website 
 The Galaxy Gourmet site offers users a chance book a table at a family friendly restaurant, where the whole family can relax and enjoy succulent meals.
 The restaurant allows users to create an account so that they may see their own reservations to update or remove if needed.
-It also offers a menu and times for booking along with socila media accounts to floow to stay updo fate with the restaurant.
-There are variou fonts used to make the website feel less bland. They are Oswald,Playpen Sans, Skranji, Titillium Web 300 and also sans-serifs as a back up font.
+It also offers a menu and times for booking along with socila media accounts to follow to stay upto date with the restaurant.
+There are various fonts used to make the website feel less bland. They are Oswald,Playpen Sans, Skranji, Titillium Web 300 and also sans-serifs as a back up font.
 
 # -Features-
 
@@ -33,7 +33,7 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 
 #### Time:
   
-   - Times that aravaible to book are shown under the menu.
+   - Times that are available to book are shown under the menu.
   
   ![Times](media/images/pp4_times.png)
 
@@ -66,7 +66,7 @@ There are variou fonts used to make the website feel less bland. They are Oswald
 
 #### Deleting Reservations:
 
- - Reservations are removed once the delete button is pressed with a confirmation message
+ - Reservations are removed once the delete button is pressed with a confirmation message.
   
   ![Delete](media/images/pp4_succesfull_deletion.png)
 
