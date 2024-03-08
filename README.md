@@ -102,7 +102,7 @@ There are various fonts used to make the website feel less bland. They are Oswal
 
  - Page allows users to make an account.
   
-  ![Sign up](media/images/pp4_account_register.png)  
+  ![Sign up](media/images/pp4_account_register.png)
   
 
 # -Technologies used-
