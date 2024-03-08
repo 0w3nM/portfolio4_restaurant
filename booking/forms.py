@@ -19,4 +19,4 @@ class ReservationForm(ModelForm):
 
     class Meta:
         model = Reservation
-        fields = '__all__'
+        fields = ('name', 'day', 'time', 'party_size')

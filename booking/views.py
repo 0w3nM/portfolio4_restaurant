@@ -30,8 +30,11 @@ def create_reservation(request):
     """
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST)
-        if reservation_form.is_valid():
-            reservation_form.save()
+        if reservation_form.is_valid():            
+            reservation = reservation_form.save(commit=False)
+            reservation.user = request.user
+            reservation.approved = False
+            reservation.save()
             messages.success(request, 'Your reservation was successful.')
             return redirect('booking:bookings')
         else:
