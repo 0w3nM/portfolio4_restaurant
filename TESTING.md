@@ -4,6 +4,56 @@
 
 ## Manual Testing
 
+- Hover action:
+
+When the User hovers over buttons and links the colors changes so the User can see that it is active.
+
+ ![Title](media/images/pp4_title_unhighlighted.png)
+
+ ![Title](media/images/pp4_title_highlighted.png)
+
+
+ ![Sign Up Unhighlighted](media/images/pp4_signup_button_unhighlighted.png)
+
+ ![Sign Up Highlighted](media/images/pp4_signup_button_highlighted.png)
+
+
+ ![Sign Out Unhighlighted](media/images/pp4_signout_button_unhighlighted.png)
+
+ ![Sign Out Highlighted](media/images/pp4_signout_button_highlighted.png)
+
+
+ ![Sign Link Unhighlighted](media/images/pp4_sign_in_link_unhighlighted.png)
+
+ ![Sign Link Highlighted](media/images/pp4_sign_in_link_highlighted.png)
+ 
+
+---
+
+- Messages:
+
+The red 'Delete' button is placed next to the 'Update' and when clicked it deletes the reservation altogether.
+
+---
+
+- Reservation Selectors:
+
+After every User interaction an message is displayed on the success of the action (as can be seen in the Manual Testing section)
+
+---
+
+- Incorrect Login:
+
+After making the reservation it is the only one shown to the logged in User.
+
+---
+
+- Reverted to Login page:
+
+When creating the reservation the form only asks the User for the Name to be on the reservation and not any of the Users 'Username' aswell to keep names protected.
+
+---
+
 ---
 
 ## Site Responsiveness
