@@ -137,11 +137,11 @@ The menu was made to be vibrant and noticable by the users and was presented wit
 - Site Navigation:
 
 The nav bar was created and offered up all the options:
-    * Sign in
-    * Log Out
-    * Account Creation
-    * Ability to Book
-    * See your reservations
+    - Sign in
+    - Log Out
+    - Account Creation
+    - Ability to Book
+    - See your reservations
  When each button is clicked it takes the user to the appropriate page.
 
  ---
