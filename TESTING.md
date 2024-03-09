@@ -54,34 +54,32 @@ Messages are shown to the User when an action is either successful or blocked.
 
  ![Sign Out](media/images/pp4_signout_validation.png)
 
-
- ![Typed Access](media/images/pp4_typed_access.png)
-
-
- ![Typed Access Validation](media/images/pp4_typed_access_validation.png)
-
-
 ---
 
 - Reservation Selectors:
 
-After every User interaction an message is displayed on the success of the action (as can be seen in the Manual Testing section)
+These are for when the User is creating a reservation they are offered muliple options to choose from.
 
----
+ ![Date Picker](media/images/pp4_date_picker_reservation_form.png)
 
-- Incorrect Login:
 
-After making the reservation it is the only one shown to the logged in User.
+ ![Time Picker](media/images/pp4_time_picker_reservation_form.png)
+
+
+ ![Party Size Picker](media/images/pp4_party_size_picker_reservation_form.png)
 
 ---
 
 - Reverted to Login page:
 
-When creating the reservation the form only asks the User for the Name to be on the reservation and not any of the Users 'Username' aswell to keep names protected.
+When a User tries to go through the URL then they are sent to the login page.
+
+![Typed Access](media/images/pp4_typed_access.png)
+
+![Typed Access Validation](media/images/pp4_typed_access_validation.png)
 
 ---
 
----
 
 ## Site Responsiveness
 
