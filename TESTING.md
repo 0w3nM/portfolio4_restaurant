@@ -32,7 +32,32 @@ When the User hovers over buttons and links the colors changes so the User can s
 
 - Messages:
 
-The red 'Delete' button is placed next to the 'Update' and when clicked it deletes the reservation altogether.
+Messages are shown to the User when an action is either successful or blocked.
+
+ ![Account Activation](media/images/pp4_account_success_validation.png)
+
+ ![Reservation Creation](media/images/pp4_reservation_validation.png)
+
+
+ ![Updated Reservation](media/images/pp4_reservation_updated_validation.png)
+
+ ![Delete Reservation](media/images/pp4_reservation_deleted_validation.png)
+
+
+ ![Wrong Login Details](media/images/pp4_incorrect_login_credentials_validation.png)
+
+ ![Wrong Date Selection](media/images/pp4_wrong_date_validation.png)
+
+
+ ![Sign In](media/images/pp4_logged_in_verification.png)
+
+ ![Sign Out](media/images/pp4_signout_validation.png)
+
+
+ ![Typed Access](media/images/pp4_typed_access.png)
+
+ ![Typed Access Validation](media/images/pp4_typed_access_validation.png)
+
 
 ---
 
