@@ -29,17 +29,17 @@ login.html -[Errors](media/images/pp4_login.html_validation.png)
 
 ### Python
 
-admin.py - [Errors](media/images/pp4_admin.py_validation.png)
+Admin.py - [Errors](media/images/pp4_css_admin.py_validation.png)
 
-forms.py - [Errors](media/images/pp4_forms.py_validation.png)
+Forms.py - [Errors](media/images/pp4_css_forms.py_validation.png)
 
-apps.py - [Errors](media/images/pp4_apps.py_validator.png)
+Apps.py - [Errors](media/images/pp4_css_apps.py_validation.png)
 
-models.py - [Errors](media/images/pp4_model.py_validation.png)
+Models.py - [Errors](media/images/pp4_css_models.py_validation.png)
 
-views.py - [Errors](media/images/pp4_views.py_validation.png)
+Views.py - [Errors](media/images/pp4_css_views.py_validation.png)
 
-booking/urls.py - [Errors](media/images/pp4_urls.py_validation.png)
+Urls.py - [Errors](media/images/pp4_css_urls.py_validation.png)
 
 ### CSS
 
