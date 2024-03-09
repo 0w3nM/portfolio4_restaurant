@@ -118,7 +118,11 @@ Urls.py - [Errors](media/images/pp4_css_urls.py_validation.png)
 
 ### CSS
 
-style.css - [Errors](media/images/pp4_css_validation.png)
+Style.css - [Errors](media/images/pp4_css_validation.png)
+
+### Lighthouse Validation
+
+Lighthouse - [Valdation](media/images/pp4_lighthouse_validation.png)
 
 ---
 
