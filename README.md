@@ -66,6 +66,12 @@ There are various fonts used to make the website feel less bland. They are Oswal
   
   ![Details](media/images/pp4_reservation_made.png)
 
+#### User only Reservation:
+
+  - The reservations are only show to the User that is logged in and made it.
+
+  ![User Only Reservation](media/images/pp4_user_only_reservation.png)
+
 #### Updating a reservation:
   
  - Form to update users reservation and success message. Images are placed at the bottom on the page to entice the user in placing an reservation to try the food.
