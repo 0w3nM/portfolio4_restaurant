@@ -220,8 +220,4 @@ When the User clicks on the 'Sign Out' button they are taken to a page to clarif
 
 When a User who is not a registered member or logged in tries to access functions through the URL, they are sent to the login page. 
 
-## Bugs Encountered and Resolutions
-
 ---
-
-## Open Bugs
