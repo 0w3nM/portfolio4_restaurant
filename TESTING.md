@@ -124,7 +124,7 @@ style.css - [Errors](media/images/pp4_css_validation.png)
 
 ## Testing User Stories
 
-- The images for the User Stories can be found in both the Features section of the README.md and above in the manual testing.
+ **The images for the User Stories can be found in both the Features section of the README.md and above in the Manual Testing.**
 
 ---
 
